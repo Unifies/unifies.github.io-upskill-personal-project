@@ -1,0 +1,108 @@
+/*Body Styling*/
+body{
+    font-family: 'Manrope';
+}
+
+/*Nav Bar Stylings*/
+header{
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px #0000000D;
+}
+
+.flexDisplay{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 85%;
+    margin: auto;
+}
+
+.logo{
+    padding: 40px 0;
+    width: 169.85px;
+    height: 23px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menuOptions li{
+    list-style: none;
+    font-weight: 700;
+    font-size: 17px;
+    color: #636363;
+    line-height: 27.32px;
+    padding: 20px;
+}
+
+.menuOptions li:hover{
+    color: #065666;
+}
+
+.active{
+    color: #065666 !important; 
+}
+
+.down{
+    padding-left: 15px;
+}
+
+.homeButton{
+    width: 278px;
+}
+
+.homeButton p{
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    background-color: #6FC247;
+    padding: 24px 30px; 
+    border-radius: 16px;
+}
+
+.homeButton i{
+    font-weight: 700;
+    color: white;
+    padding-left: 16px;
+}
+
+.BarsIcon i{
+    color: #636363;
+    display: none;
+    padding: 40px 0;
+}
+
+@media(max-width:1230px){
+    .homeButton{
+        width: 210px;
+    }
+    
+    .homeButton p{
+        padding: 20px 30px;
+        font-size: 13px;
+        height: 20px;
+        margin-top: 15px;
+    }
+
+    .menuOptions li{
+        font-size: 13px;
+        padding: 17px;
+    }
+
+}
+
+@media(max-width:900px){
+    .menuOptions{
+        display: none;
+    }
+    .homeButton p{
+        display: none;
+    }
+    .BarsIcon i{
+        display: block;
+    }
+    
+}
