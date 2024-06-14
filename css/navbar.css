@@ -54,13 +54,14 @@ nav{
     width: 278px;
 }
 
-.homeButton p{
+.button{
     font-weight: 700;
-    font-size: 17px;
+    font-size: 16px;
     color: white;
     background-color: #6FC247;
-    padding: 24px 30px; 
+    padding: 20px 30px; 
     border-radius: 16px;
+    height: 20px;
 }
 
 .homeButton i{
@@ -80,10 +81,9 @@ nav{
         width: 210px;
     }
     
-    .homeButton p{
+    .button{
         padding: 20px 30px;
         font-size: 13px;
-        height: 20px;
         margin-top: 15px;
     }
 
@@ -98,7 +98,7 @@ nav{
     .menuOptions{
         display: none;
     }
-    .homeButton p{
+    .button{
         display: none;
     }
     .BarsIcon i{
