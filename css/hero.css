@@ -7,10 +7,9 @@ main{
     justify-content: center;
 }
 
-.section1{
+.heroblurb{
     width: 70%;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .section1 h1{
@@ -74,9 +73,18 @@ main{
     border: 1px solid #6FC247;
 }
 
+.heroImage{
+    width: 85%;
+    margin: auto;
+}
+
+.heroImage img{
+    width: 100%;
+}
+
 
 @media(max-width:700px){
-    .section1{
+    .heroblurb{
         width: 100%;
     }
 
@@ -115,7 +123,7 @@ main{
 
 
 @media(max-width:1050px){
-    .section1{
+    .heroblurb{
         width: 85%;
     }
     
