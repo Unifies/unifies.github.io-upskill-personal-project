@@ -1,0 +1,109 @@
+.section4{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.section4Title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.section4Title h1{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 43.71px;
+    text-align: center;
+    color: #373737;
+}
+
+.section4Title p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #373737;
+}
+
+.section4Body{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personaliseTexts{
+    width: 37%;
+    margin: auto;
+    text-align: left;
+}
+
+.personalise{
+    margin-bottom: 50px;
+}
+
+.personalise h1{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+    text-align: center;
+    color: #373737;
+}
+
+.personalise p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+}
+
+.sectionImage{
+    width: 55%;
+}
+
+.sectionImage img{
+    width: 100%;
+}
+
+.section4Button{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width:1000px){
+    .personaliseTexts{
+        width: 50%;
+    }
+
+    .sectionImage{
+        width: 45%;
+    }
+
+    .sectionImage img{
+        height: 100%;
+    }
+}
+
+@media(max-width:600px){
+    .section4Title{
+        width: 90%;
+    }
+
+    .section4Body{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .sectionImage{
+        width: 100%;
+        order: -1;
+    }
+
+    .personaliseTexts{
+        width: 100%;
+    }
+    
+    
+}

@@ -1,0 +1,88 @@
+.section3{
+    margin: 50px auto;
+}
+
+.blackBackground{
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    padding: 50px 0;
+}
+
+.whyValuticoTexts{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.whyValuticoTexts h1{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.64px;
+    text-align: center;
+}
+
+.whyValuticoTexts p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #D7D7D7;
+}
+
+.reasonWhy{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reason1{
+    width: 32%;
+    margin: auto;
+}
+
+.reason1 h3{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 32.78px;
+    text-align: left;
+    color: white;
+}
+
+.reason1 p{
+    color: #D7D7D7;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+@media(max-width:1000px){
+    .whyValuticoTexts{
+        width: 95%;
+    }
+
+    .reasonWhy{
+        display: block;
+    }
+
+    .reason1{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .reason1 p{
+        line-height: 10px;
+    }
+}
+
+@media(max-width:750px){
+
+    .reason1 p{
+        line-height: 30px;
+    }
+}
