@@ -28,30 +28,36 @@ sizes.
 
 
 Evaluation Criteria
-● Design Fidelity: How accurately the final website matches the Figma design.
-● Code Quality: Cleanliness, organisation, and comments in the code.
-● Responsiveness: How well the website adapts to different screen sizes.
-● Functionality: Proper implementation of all interactive elements.
+1. Design Fidelity: How accurately the final website matches the Figma design.
+2. Code Quality: Cleanliness, organisation, and comments in the code.
+3. Responsiveness: How well the website adapts to different screen sizes.
+4. Functionality: Proper implementation of all interactive elements.
 
 
 Figma Design Access
+
 ● https://www.figma.com/file/lkNm0iNJONhsObqVIbfVRy
 
 
 Additional Notes
-● Pay attention to fonts, colours, spacing, and alignment to ensure the design is replicated
+1. Pay attention to fonts, colours, spacing, and alignment to ensure the design is replicated
 accurately.
-● Use semantic HTML elements for better accessibility and SEO.
-● Regularly commit your work to the Git repository and push to GitHub to track your
+2. Use semantic HTML elements for better accessibility and SEO.
+3. Regularly commit your work to the Git repository and push to GitHub to track your
 progress.
+
 Please contact your mentors if you have any questions or need clarification on any aspect of the
 project.
 
 Good luck, and happy coding!
+
 You have ten days to get this done. Your time starts now!
 
 
 Submission Details:
+
 Link: https://forms.gle/AX2eTqnY2Y8RMHEY6
+
 Deadline: Tuesday 18th June, 2024
+
 Time: 11:59 PM
