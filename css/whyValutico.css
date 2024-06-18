@@ -1,12 +1,8 @@
 .section3{
-    margin: 50px auto;
-}
-
-.blackBackground{
+    margin: 70px auto 50px;
     width: 100%;
-    margin: auto;
     background-color: black;
-    padding: 50px 0;
+    padding: 30px 0 50px;
 }
 
 .whyValuticoTexts{
@@ -38,12 +34,12 @@
     justify-content: space-between;
 }
 
-.reason1{
+.reason{
     width: 32%;
     margin: auto;
 }
 
-.reason1 h3{
+.reason h3{
     font-size: 22px;
     font-weight: 800;
     line-height: 32.78px;
@@ -51,7 +47,7 @@
     color: white;
 }
 
-.reason1 p{
+.reason p{
     color: #D7D7D7;
     font-size: 17px;
     font-weight: 500;
@@ -62,27 +58,29 @@
 
 @media(max-width:1000px){
     .whyValuticoTexts{
-        width: 90%;
+        width: 85%;
     }
 
     .reasonWhy{
         display: block;
+        margin-top: 80px;
+        width: 90%;
     }
 
-    .reason1{
+    .reason{
         width: 95%;
         margin: auto;
         margin-bottom: 40px;
     }
 
-    .reason1 p{
-        line-height: 10px;
+    .reason h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.59px;
     }
-}
-
-@media(max-width:750px){
-
-    .reason1 p{
-        line-height: 30px;
+    
+    .reason p{
+        font-size: 16px;
+        line-height: 25px;
     }
 }

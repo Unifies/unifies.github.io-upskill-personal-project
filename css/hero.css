@@ -5,10 +5,10 @@ main{
 
 .heroblurb{
     width: 70%;
-    margin: 50px auto;
+    margin: 50px auto 30px auto;
 }
 
-.section1 h1{
+.heroblurb h1{
     font-size: 50px;
     font-weight: 800;
     line-height: 70px;
@@ -16,7 +16,7 @@ main{
     color: #373737;
 }
 
-.heroText{
+.heroblurb p{
     width: 90%;
     margin: -20px auto auto;
     font-size: 20px;
@@ -27,9 +27,8 @@ main{
 }
 
 .heroButtons{
-    margin-top: 50px;
     width: 65%;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .heroButton{
@@ -62,7 +61,7 @@ main{
     font-weight: 700;
     font-size: 16px;
     color: #6FC247;
-    padding: 18px 50px; 
+    padding: 18px 40px; 
     border-radius: 16px;
     height: 20px;
     background-color: transparent;
@@ -71,7 +70,7 @@ main{
 
 .heroImage{
     width: 85%;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .heroImage img{
@@ -79,57 +78,61 @@ main{
 }
 
 
-@media(max-width:700px){
-    .heroblurb{
-        width: 100%;
-    }
-
-    .section1 h1{
-        font-size: 35px;
-        line-height: 55px;
-    }
-    
-    .heroText{
-        width: 100%;
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .heroButtons{
-        width: 95%;
-    }
-
-    .heroButton{
-        width: 50%;
-    }
-
-    .button1{
-        font-size: 12px;
-        padding: 20px 10px; 
-        margin-right: 10px;
-    }
-    
-    .button2{
-        font-size: 12px;
-        padding: 18px 20px; 
-    }
-
-    
-
-}
-
-
-
 @media(max-width:1050px){
     .heroblurb{
         width: 85%;
     }
     
-    .heroText{
+    .heroblurb p{
         width: 85%;
     }
 
     .heroButtons{
         width: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .heroblurb{
+        width: 90%;
+    }
+
+    .heroblurb h1{
+        font-size: 35px;
+        line-height: 55px;
+    }
+    
+    .heroblurb p{
+        width: 95%;
+        font-size: 16px;
+        line-height: 35px;
+    } 
+
+    .heroButton{
+        width: 250px;
+    }
+
+}
+
+@media(max-width:520px){
+   
+    .heroblurb{
+        margin-top: -3px;
+    }
+
+    .heroblurb h1{
+        font-size: 30px;
+    }
+
+    .heroButton{
+        width: 200px;
+    }
+
+    .button1,.button2{
+        font-size: 12px;
+    }
+    
+    .button2{ 
+        padding: 18px 20px !important; 
     }
 }
