@@ -1,10 +1,6 @@
 main{
     width: 100%;
-}
-
-.flexOnly{
-    display: flex;
-    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .heroblurb{
@@ -94,7 +90,7 @@ main{
     }
     
     .heroText{
-        width: 95%;
+        width: 100%;
         font-size: 16px;
         line-height: 35px;
     }
@@ -117,6 +113,8 @@ main{
         font-size: 12px;
         padding: 18px 20px; 
     }
+
+    
 
 }
 

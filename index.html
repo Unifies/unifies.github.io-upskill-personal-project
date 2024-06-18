@@ -29,27 +29,29 @@
 
         <nav class="flexDisplay">
 
-            <div class="logo">
-                <img src="./images/logo.png" alt="Vaultico Logo">
-            </div>
-
-            <div class="menuOptions">
-                <ul class="flexDisplay">
-                    <li class="active">Home</li>
-                    <li class="flexDisplay">Solutions <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
-                    <li class="flexDisplay">Your work <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
-                    <li class="flexDisplay">Company <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
-                </ul>
-            </div>
-
             <div class="flexDisplay">
-
-                <div class="homeButton flexDisplay">
-                    <p class="button">Request a Demo <i class="fa-solid fa-square-check"></i></p>       
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Vaultico Logo">
                 </div>
 
                 <div class="BarsIcon">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+                </div>
+            </div>
+
+            <div class="menu flexDisplay" id="responsiveMenu">
+
+                <div class="menuOptions">
+                    <ul class="flexDisplay">
+                        <li class="active flexOnly">Home</li>
+                        <li class="flexOnly">Solutions <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
+                        <li class="flexOnly">Your work <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
+                        <li class="flexOnly">Company <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
+                    </ul>
+                </div>
+
+                <div class="homeButton">
+                    <p class="button">Request a Demo <i class="fa-solid fa-square-check"></i></p>       
                 </div>
 
             </div>
@@ -244,5 +246,6 @@
 
     </main>
     
+    <script src="./javaScript/main.js"></script>
 </body>
 </html>
