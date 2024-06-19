@@ -9,7 +9,7 @@
 }
 
 .reviewText h2{
-    font-size: 29px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 30px;
     text-align: center;
@@ -17,7 +17,7 @@
 }
 
 .reviewText p{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     text-align: center;
@@ -48,15 +48,32 @@
     width: 100%;
 }
 
+
+@media(max-width:1000px){
+    .section2{
+        width: 95%;
+        margin: 50px auto;
+    }
+
+    .reviewText{
+        width: 100%;
+    }
+
+    .brand{
+        width: calc(33.3% - 16px);
+    }
+
+}
+
 @media(max-width:700px){
 
     .reviewText h2{
-        font-size: 23px;
+        font-size: 24px;
         line-height: 30px;
     }
     
     .reviewText p{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
     }
     
@@ -65,14 +82,13 @@
         }
 }
 
-@media(max-width:1000px){
+@media(max-width:400px){
 
-    .reviewText{
-        width: 90%;
+    .reviewText h2{
+        font-size: 20px;
     }
-
-    .brand{
-        width: calc(33.3% - 16px);
+    
+    .reviewText p{
+        font-size: 14px;
     }
-
 }

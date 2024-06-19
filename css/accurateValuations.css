@@ -69,6 +69,16 @@
 
 
 @media(max-width:900px){
+    .section4Title h1{
+        font-size: 24px;
+        line-height: 32.78px;
+    }
+    
+    .section4Title p{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
     .personaliseTexts{
         width: 50%;
     }
@@ -126,4 +136,16 @@
         margin-bottom: 0px;
     }
     
+}
+
+@media(max-width:900px){
+    .section4Title h1{
+        font-size: 20px;
+        line-height: 27.32px;
+    }
+    
+    .section4Title p{
+        font-size: 16px;
+        line-height: 32px;
+    }
 }
