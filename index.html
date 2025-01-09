@@ -1,250 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valutico</title>
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/valuation-image.png"
+    />
+
     <!--Importing FontAwesome-->
-    <script src="https://kit.fontawesome.com/c836f0ce7a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c836f0ce7a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--Importing Manrope Font Family-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Linking CSS Files-->
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/customerReview.css">
-    <link rel="stylesheet" href="./css/whyValutico.css">
-    <link rel="stylesheet" href="./css/accurateValuations.css">
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/customerReview.css" />
+    <link rel="stylesheet" href="./css/whyValutico.css" />
+    <link rel="stylesheet" href="./css/accurateValuations.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!--Responsive Nav Bar-->
 
     <header>
+      <nav class="flexDisplay">
+        <div class="flexDisplay">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Vaultico Logo" />
+          </div>
 
-        <nav class="flexDisplay">
+          <div class="BarsIcon">
+            <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+          </div>
+        </div>
 
-            <div class="flexDisplay">
-                <div class="logo">
-                    <img src="./images/logo.png" alt="Vaultico Logo">
-                </div>
+        <div class="topnav" id="responsiveMenu">
+          <ul>
+            <li class="flexOnly"><a href="#" class="active">Home</a></li>
+            <li>
+              <a href="#" class="flexOnly"
+                >Solutions
+                <div class="down"><i class="fa-solid fa-chevron-down"></i></div
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="flexOnly"
+                >Your work
+                <div class="down"><i class="fa-solid fa-chevron-down"></i></div
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="flexOnly"
+                >Company
+                <div class="down"><i class="fa-solid fa-chevron-down"></i></div
+              ></a>
+            </li>
+          </ul>
 
-                <div class="BarsIcon">
-                    <i class="fa-solid fa-bars" onclick="myFunction()"></i>
-                </div>
-            </div>
-
-            <div class="menu flexDisplay" id="responsiveMenu">
-
-                <div class="menuOptions">
-                    <ul class="flexDisplay">
-                        <li class="active flexOnly">Home</li>
-                        <li class="flexOnly">Solutions <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
-                        <li class="flexOnly">Your work <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
-                        <li class="flexOnly">Company <div class="down"><i class="fa-solid fa-chevron-down"></i></div></li>
-                    </ul>
-                </div>
-
-                <div class="homeButton">
-                    <p class="button">Request a Demo <i class="fa-solid fa-square-check"></i></p>       
-                </div>
-
-            </div>
-        
-        </nav>
-
+          <div class="homeButton">
+            <p class="button">
+              Request a Demo <i class="fa-solid fa-square-check"></i>
+            </p>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <!--Hero Section-->
+      <section class="section1">
+        <div class="heroblurb">
+          <h1>The World's Leading Business Valuation Software</h1>
 
-        <!--Hero Section-->
-        <section class="section1">
+          <p>
+            Valutico provides the financial services industry and valuation
+            experts with data-driven tools to perform accurate company
+            valuations faster and more accurately than ever before.
+          </p>
+        </div>
 
-            <div class="heroblurb">
-                <h1>The World's Leading Business Valuation Software</h1>
+        <div class="heroButtons flexOnly">
+          <div class="heroButton flexDisplay">
+            <p class="button1">
+              Request a Demo <i class="fa-solid fa-square-check"></i>
+            </p>
+          </div>
 
-                <p>Valutico provides the financial services industry and valuation experts with 
-                    data-driven tools to perform accurate company valuations faster and more accurately 
-                    than ever before.
-                </p>
+          <div class="heroButton flexDisplay">
+            <p class="button2">Sign up/Login</p>
+          </div>
+        </div>
 
+        <div class="heroImage">
+          <img src="./images/hero-image.png" alt="" />
+        </div>
+      </section>
+
+      <!--Section 2 - Customer Review Section-->
+      <section class="section2">
+        <div class="reviewText">
+          <h2>Trusted by Hundreds of Financial Firms in 75 Countries</h2>
+
+          <p>
+            Our team of more than 50 employees is globally distributed and
+            serves both national and international clients in over 75 countries.
+          </p>
+        </div>
+
+        <div class="brands">
+          <div class="brand">
+            <img src="./images/allinial.png" class="allinial" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/oaklins.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/russel.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/crowe.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/bcrh.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/praxity.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/bakertilly.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/stan-char.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/pandea.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/global.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/cdi.png" alt="" />
+          </div>
+
+          <div class="brand">
+            <img src="./images/rodl.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--Section 3 - Why Valutico-->
+      <section class="section3">
+        <div class="whyValuticoTexts">
+          <h1>Why Valutico?</h1>
+          <p>
+            An award-winning fintech providing a range of company valuation
+            solutions, Valutico provides the financial services industry and
+            valuation experts with data-driven tools.
+          </p>
+        </div>
+
+        <div class="reasonWhy">
+          <div class="reason">
+            <h3>Secure</h3>
+            <p>
+              Private by default, creating a safe space around your projects and
+              your data.
+            </p>
+          </div>
+
+          <div class="reason">
+            <h3>Reliable</h3>
+            <p>Created by valuation experts for valuation professionals.</p>
+          </div>
+
+          <div class="reason">
+            <h3>Dedicated to your success</h3>
+            <p>
+              24/7 support and multi-language capabilities to support your
+              needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 4 - accurateValuations-->
+      <section class="section4">
+        <div class="section4Title">
+          <h1>Accurate Valuations in Minutes</h1>
+          <p>
+            Find the company data you need in seconds, with 3TB of global
+            financial data featuring almost 1 million transactions and over
+            50,000 thousand comparable peers
+          </p>
+        </div>
+
+        <div class="section4Body">
+          <div class="personaliseTexts">
+            <div class="personalise">
+              <h3>Personalise Your Reports</h3>
+              <p>
+                Save hours transferring results from spreadsheet to slides, by
+                exporting your results to Powerpoint and Word templates
+                effortlessly.
+              </p>
             </div>
 
-            <div class="heroButtons flexOnly">
-
-                <div class="heroButton flexDisplay">
-                    <p class="button1">Request a Demo <i class="fa-solid fa-square-check"></i></p>       
-                </div>
-
-                <div class="heroButton flexDisplay">
-                    <p class="button2">Sign up/Login</p>       
-                </div>
-
-            </div>
-            
-
-            <div class="heroImage">
-                <img src="./images/hero-image.png" alt="">
+            <div class="personalise">
+              <h3>28 Valuation Method Options</h3>
+              <p>
+                From loss-making companies to mature enterprises, and from
+                startups to SME's, value businesses of any type using multiple
+                valuation methods.
+              </p>
             </div>
 
-        </section>
-
-        <!--Section 2 - Customer Review Section-->
-        <section class="section2">
-
-            <div class="reviewText">
-                <h2>Trusted by Hundreds of Financial Firms in 75 Countries</h2>
-
-                <p>Our team of more than 50 employees is globally distributed and serves both national 
-                    and international clients in over 75 countries.
-                </p>
+            <div class="personalise">
+              <h3>Fast Access to Premium Data</h3>
+              <p>
+                Access the most highly-trusted global databases of company
+                financial data to locate the figures you need.
+              </p>
             </div>
+          </div>
 
-            <div class="brands">
+          <div class="sectionImage">
+            <img src="./images/valuation-image.png" alt="" />
+          </div>
+        </div>
 
-                <div class="brand">
-                    <img src="./images/allinial.png" class="allinial" alt="">
-                </div>
+        <div class="flexOnly">
+          <div class="heroButton flexDisplay">
+            <p class="button1">
+              Request a Demo <i class="fa-solid fa-square-check"></i>
+            </p>
+          </div>
+        </div>
+      </section>
 
-                <div class="brand">
-                    <img src="./images/oaklins.png" alt="">
-                </div>
+      <footer>
+        <div class="footer">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Vaultico Logo" />
+          </div>
 
-                <div class="brand">
-                    <img src="./images/russel.png" alt="">
-                </div>
+          <div class="footerDiv">
+            <h1>Products</h1>
 
-                <div class="brand">
-                    <img src="./images/crowe.png" alt="">
-                </div>
+            <p>Valutico Platform</p>
+            <p>Private Company Valutations</p>
+            <p>Modules</p>
+            <p>MyValutico</p>
+            <p>ValutEco (ESG)</p>
+            <p>Valuation Services</p>
+          </div>
 
-                <div class="brand">
-                    <img src="./images/bcrh.png" alt="">
-                </div>
+          <div class="footerDiv">
+            <h1>Resources</h1>
 
-                <div class="brand">
-                    <img src="./images/praxity.png" alt="">
-                </div>
+            <p>Blog</p>
+            <p>Valuation Guides</p>
+            <p>Press</p>
+            <p>Help</p>
+            <p>Resources</p>
+          </div>
 
-                <div class="brand">
-                    <img src="./images/bakertilly.png" alt="">
-                </div>
+          <div class="footerDiv">
+            <h1>About Us</h1>
 
-                <div class="brand">
-                    <img src="./images/stan-char.png" alt="">
-                </div>
-
-                <div class="brand">
-                    <img src="./images/pandea.png" alt="">
-                </div>
-
-                <div class="brand">
-                    <img src="./images/global.png" alt="">
-                </div>
-
-                <div class="brand">
-                    <img src="./images/cdi.png" alt="">
-                </div>
-
-                <div class="brand">
-                    <img src="./images/rodl.png" alt="">
-                </div>
-
-            </div>            
-
-        </section>
-
-        <!--Section 3 - Why Valutico-->
-        <section class="section3">
-
-            <div class="whyValuticoTexts">
-                <h1>Why Valutico?</h1>
-                <p>An award-winning fintech providing a range of company valuation solutions, 
-                    Valutico provides the financial services industry and valuation experts with 
-                    data-driven tools.
-                </p>
-            </div>
-
-            <div class="reasonWhy">
-
-                <div class="reason">
-                    <h3>Secure</h3>
-                    <p>Private by default, creating a safe space around your projects and your data.</p>
-                </div>
-
-                <div class="reason">
-                    <h3>Reliable</h3>
-                    <p>Created by valuation experts for valuation professionals.</p>
-                </div>
-
-                <div class="reason">
-                    <h3>Dedicated to your success</h3>
-                    <p>24/7 support and multi-language capabilities to support your  needs.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!--Section 4 - accurateValuations-->
-        <section class="section4">
-
-            <div class="section4Title">
-
-                <h1>Accurate Valuations in Minutes</h1>
-                <p>Find the company data you need in seconds, with 3TB of global financial data 
-                    featuring almost 1 million transactions and over 50,000 thousand comparable peers
-                </p>
-
-            </div>
-
-            <div class="section4Body">
-
-                <div class="personaliseTexts">
-                    <div class="personalise">
-                        <h3>Personalise Your Reports</h3>
-                        <p>Save hours transferring results from spreadsheet to slides, by exporting 
-                            your results to Powerpoint and Word templates effortlessly.
-                        </p>
-                    </div>
-
-                    <div class="personalise">
-                        <h3>28 Valuation Method Options</h3>
-                        <p>From loss-making companies to mature enterprises, and from startups to SME's, 
-                            value businesses of any type using multiple valuation methods.
-                        </p>
-                    </div>
-
-                    <div class="personalise">
-                        <h3>Fast Access to Premium Data</h3>
-                        <p>Access the most highly-trusted global databases of company financial data to 
-                            locate the figures you need.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="sectionImage">
-                    <img src="./images/valuation-image.png" alt="">
-                </div>
-
-            </div>
-
-            <div class="flexOnly">
-
-                <div class="heroButton flexDisplay">
-                    <p class="button1">Request a Demo <i class="fa-solid fa-square-check"></i></p>       
-                </div>
-                
-            </div>
-        </section>
-
+            <p>About us</p>
+            <p>Careers</p>
+            <p>Contact Us</p>
+            <p>Book a Demo</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+        <p class="copyright">©2024 Valutico</p>
+      </footer>
     </main>
-    
+
     <script src="./javaScript/main.js"></script>
-</body>
+  </body>
 </html>

@@ -1,151 +1,148 @@
-.section4{
-    width: 100%;
-    margin-top: 70px;
+.section4 {
+  width: 100%;
+  margin: 70px 0 90px;
 }
 
-.section4Title{
-    width: 80%;
-    margin: auto;
-    text-align: center;
+.section4Title {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-.section4Title h1{
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 43.71px;
-    text-align: center;
-    color: #373737;
+.section4Title h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43.71px;
+  text-align: center;
+  color: #373737;
 }
 
-.section4Title p{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: center;
-    color: #373737;
+.section4Title p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #373737;
 }
 
-.section4Body{
-    width: 90%;
-    margin: 80px auto;
-    display: flex;
-    justify-content: space-between;
+.section4Body {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.personaliseTexts{
-    width: 37%;
-    margin: auto;
-    text-align: left;
+.personaliseTexts {
+  width: 37%;
+  margin: auto;
+  text-align: left;
 }
 
-.personalise{
-    margin-bottom: 50px;
+.personalise {
+  margin-bottom: 50px;
 }
 
-.personalise h1{
+.personalise h1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32.78px;
+  text-align: center;
+  color: #373737;
+}
+
+.personalise p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+}
+
+.sectionImage {
+  width: 55%;
+}
+
+.sectionImage img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .section4Title h1 {
     font-size: 24px;
-    font-weight: 800;
     line-height: 32.78px;
-    text-align: center;
-    color: #373737;
-}
+  }
 
-.personalise p{
+  .section4Title p {
     font-size: 20px;
-    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .personaliseTexts {
+    width: 50%;
+  }
+
+  .personalise h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.59px;
+  }
+
+  .personalise p {
+    font-size: 16px;
     line-height: 30px;
-    text-align: left;
-    color: #000000;
-}
+  }
 
-.sectionImage{
-    width: 55%;
-}
+  .sectionImage {
+    width: 45%;
+  }
 
-.sectionImage img{
+  .sectionImage img {
     width: 100%;
-    height: 100%;
+    height: 643px;
+  }
 }
 
+@media (max-width: 700px) {
+  .section4Title {
+    width: 90%;
+  }
 
-@media(max-width:900px){
-    .section4Title h1{
-        font-size: 24px;
-        line-height: 32.78px;
-    }
-    
-    .section4Title p{
-        font-size: 20px;
-        line-height: 40px;
-    }
+  .section4Body {
+    flex-direction: column;
+    margin: 40px auto;
+  }
 
-    .personaliseTexts{
-        width: 50%;
-    }
-    
-    .personalise h1{
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24.59px;
-    }
-    
-    .personalise p{
-        font-size: 16px;
-        line-height: 30px;
-    }
+  .sectionImage {
+    width: 100%;
+    order: -1;
+  }
 
-    .sectionImage{
-        width: 45%;
-    }
+  .sectionImage img {
+    height: auto;
+  }
 
-    .sectionImage img{
-        width: 100%;
-        height: 643px;
-    }
+  .personaliseTexts {
+    width: 100%;
+  }
 
+  .personaliseTexts {
+    margin-top: 30px;
+  }
+
+  .personalise {
+    margin-bottom: 0px;
+  }
 }
 
-@media(max-width:700px){
-    .section4Title{
-        width: 90%;
-    }
+@media (max-width: 900px) {
+  .section4Title h1 {
+    font-size: 20px;
+    line-height: 27.32px;
+  }
 
-    .section4Body{
-        flex-direction: column;
-        margin: 40px auto;
-    }
-
-    .sectionImage{
-        width: 100%;
-        order: -1;
-    }
-
-    .sectionImage img{
-        height: auto;
-    }
-
-    .personaliseTexts{
-        width: 100%;
-    }
-
-    .personaliseTexts{
-        margin-top: 30px;
-    }
-    
-    .personalise{
-        margin-bottom: 0px;
-    }
-    
-}
-
-@media(max-width:900px){
-    .section4Title h1{
-        font-size: 20px;
-        line-height: 27.32px;
-    }
-    
-    .section4Title p{
-        font-size: 16px;
-        line-height: 32px;
-    }
+  .section4Title p {
+    font-size: 16px;
+    line-height: 32px;
+  }
 }

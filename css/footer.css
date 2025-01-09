@@ -1,0 +1,47 @@
+footer {
+  padding: 3rem 7.5% 4rem;
+  background-color: black;
+  color: white;
+  width: 85%;
+  margin: auto;
+  font-family: inherit;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h1 {
+  font-size: 20px;
+}
+
+.footer p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footerDiv {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footerDiv {
+    width: 45%;
+  }
+
+  footer .logo {
+    width: 140px;
+  }
+}

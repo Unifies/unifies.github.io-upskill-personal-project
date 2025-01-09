@@ -1,158 +1,152 @@
-main{
-    width: 100%;
-    margin-bottom: 100px;
+main {
+  width: 100%;
 }
 
-.heroblurb{
-    width: 70%;
-    margin: 50px auto 30px auto;
+.heroblurb {
+  width: 70%;
+  margin: 50px auto 30px auto;
 }
 
-.heroblurb h1{
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 70px;
-    text-align: center;
-    color: #373737;
+.heroblurb h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 70px;
+  text-align: center;
+  color: #373737;
 }
 
-.heroblurb p{
-    width: 90%;
-    margin: -20px auto auto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 43.2px;
-    text-align: center;
-    color: #373737;
+.heroblurb p {
+  width: 90%;
+  margin: -20px auto auto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 43.2px;
+  text-align: center;
+  color: #373737;
 }
 
-.heroButtons{
-    width: 65%;
-    margin: auto;
+.heroButtons {
+  width: 65%;
+  margin: auto;
 }
 
-.heroButton{
-    width: 250px;
+.heroButton {
+  width: 250px;
 }
 
-.heroButton i{
-    font-weight: 700;
-    color: white;
-    padding-left: 16px;
+.heroButton i {
+  font-weight: 700;
+  color: white;
+  padding-left: 16px;
 }
 
-.button1{
-    text-align: center;
-    width: 100%;
-    font-weight: 700;
-    font-size: 16px;
-    color: white;
-    background-color: #6FC247;
-    padding: 20px 20px; 
-    border-radius: 16px;
-    height: 20px;
-    margin-right: 20px;
+.button1 {
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #6fc247;
+  padding: 20px 20px;
+  border-radius: 16px;
+  height: 20px;
+  margin-right: 20px;
 }
 
-.button2{
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    font-weight: 700;
-    font-size: 16px;
-    color: #6FC247;
-    padding: 18px 40px; 
-    border-radius: 16px;
-    height: 20px;
-    background-color: transparent;
-    border: 1px solid #6FC247;
+.button2 {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6fc247;
+  padding: 18px 40px;
+  border-radius: 16px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #6fc247;
 }
 
-.heroImage{
+.heroImage {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.heroImage img {
+  width: 100%;
+}
+
+@media (max-width: 1050px) {
+  .heroblurb {
     width: 85%;
-    margin: 50px auto;
-}
+  }
 
-.heroImage img{
+  .heroblurb p {
+    width: 85%;
+  }
+
+  .heroButtons {
     width: 100%;
+  }
 }
 
+@media (max-width: 700px) {
+  .heroblurb {
+    width: 90%;
+  }
 
-@media(max-width:1050px){
-    .heroblurb{
-        width: 85%;
-    }
-    
-    .heroblurb p{
-        width: 85%;
-    }
+  .heroblurb h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
 
-    .heroButtons{
-        width: 100%;
-    }
+  .heroblurb p {
+    width: 95%;
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .heroButton {
+    width: 250px;
+  }
 }
 
-@media(max-width:700px){
-    .heroblurb{
-        width: 90%;
-    }
+@media (max-width: 520px) {
+  .heroblurb {
+    margin-top: -3px;
+  }
 
-    .heroblurb h1{
-        font-size: 35px;
-        line-height: 55px;
-    }
-    
-    .heroblurb p{
-        width: 95%;
-        font-size: 16px;
-        line-height: 35px;
-    } 
+  .heroblurb h1 {
+    font-size: 30px;
+  }
 
-    .heroButton{
-        width: 250px;
-    }
+  .heroButton {
+    width: 200px;
+  }
 
+  .button1 {
+    padding: 20px 10px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .button2 {
+    width: 70%;
+    font-size: 12px;
+  }
 }
 
-@media(max-width:520px){
-   
-    .heroblurb{
-        margin-top: -3px;
-    }
-
-    .heroblurb h1{
-        font-size: 30px;
-    }
-
-    .heroButton{
-        width: 200px;
-    }
-
-    .button1{
-        padding: 20px 10px; 
-        font-size: 12px;
-        margin-right: 10px;
-    }
-    
-    .button2{ 
-        width: 70%; 
-        font-size: 12px;
-    }
-}
-
-@media(max-width:420px){
-   
-   .section1 .flexOnly{
+@media (max-width: 420px) {
+  .section1 .flexOnly {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   }
+  }
 
-
-   .button2{ 
+  .button2 {
     width: 76%;
     margin-left: -1px;
-    padding: 18px 20px !important; 
+    padding: 18px 20px !important;
     font-size: 12px;
-    }
+  }
 }

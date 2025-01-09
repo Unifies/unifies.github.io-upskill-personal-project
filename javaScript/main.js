@@ -1,8 +1,8 @@
 function myFunction() {
   var x = document.getElementById("responsiveMenu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.className === "topnav") {
+    x.className += "responsive";
   } else {
-    x.style.display = "none";
+    x.className = "topnav";
   }
 }
