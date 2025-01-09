@@ -8,28 +8,22 @@ body {
 header {
   width: 100%;
   margin: auto;
-  box-shadow: 0px 4px 4px 0px #0000000d;
 }
 
-nav {
+.navBar {
   width: 85%;
-  margin: auto;
-}
-
-.topnav {
   display: flex;
   justify-content: space-between;
-}
-
-.flexDisplay {
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 7.5%;
+  box-shadow: 0px 4px 4px 0px #0000000d;
 }
 
 .logo {
   padding: 40px 0;
   width: 169.85px;
   height: 23px;
+  align-self: flex-start;
 }
 
 .logo img {
@@ -37,29 +31,22 @@ nav {
   cursor: pointer;
 }
 
-.BarsIcon i {
-  color: #636363;
-  display: none;
-  padding: 40px 0;
-  cursor: pointer;
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 
-ul {
+.menuItems {
   display: flex;
   justify-content: space-between;
   margin-right: 30px;
 }
 
-.flexOnly {
-  display: flex;
-  justify-content: center;
-}
-
-ul li {
+.menuItems li {
   list-style: none;
 }
 
-ul li a {
+.menuItems li a {
   font-weight: 700;
   font-size: 17px;
   color: #636363;
@@ -69,23 +56,30 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+.menuItems li a:hover {
   color: #065666;
 }
 
-.active {
+.menuItems .active {
   color: #065666 !important;
 }
 
-.down {
+.menuItems .down {
   padding-left: 15px;
 }
 
+.icon {
+  color: #636363;
+  display: none;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
 .homeButton {
-  width: 278px;
+  width: 250px;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .button {
@@ -101,68 +95,110 @@ ul li a:hover {
 .homeButton i {
   font-weight: 700;
   color: white;
-  padding-left: 16px;
+  padding-left: 10px;
 }
 
-@media (max-width: 1230px) {
+.flexDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexOnly {
+  display: flex;
+  justify-content: center;
+}
+
+.responsiveMenu {
+  display: none;
+  width: 300px;
+  right: 0;
+  opacity: 0;
+  background-color: #6fc247;
+  position: absolute;
+  padding: 1rem;
+  border-radius: 10px 0 0 10px;
+  transition: opacity 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.responsiveMenu.open {
+  opacity: 1;
+}
+
+.responsiveMenuItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.responsiveMenuItems li {
+  list-style: none;
+}
+
+.responsiveMenuItems li a {
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+  line-height: 27.32px;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.responsiveMenuItems li a:hover {
+  color: #065666;
+}
+
+.responsiveMenuItems .active {
+  color: #065666 !important;
+}
+
+.responsiveMenuItems .down {
+  padding-left: 15px;
+}
+
+@media (max-width: 1250px) {
   .logo img {
     width: 90%;
   }
 
-  ul li {
-    font-size: 13px;
-    padding: 17px;
+  .menuItems li a {
+    font-size: 14px;
   }
 
   .homeButton {
-    width: 210px;
+    width: auto;
   }
 
   .button {
-    padding: 20px 30px;
+    padding: 20px;
     font-size: 13px;
-    margin-top: 15px;
   }
 }
 
-@media (max-width: 900px) {
-  nav {
-    flex-direction: column;
+@media (max-width: 1050px) {
+  .menuItems li a {
+    font-size: 12px;
   }
+}
 
-  .logo img {
-    width: 70%;
-  }
-
-  .BarsIcon i {
+@media (max-width: 1000px) {
+  .icon {
     display: block;
   }
 
-  .topnav,
+  .menu {
+    display: none;
+  }
+
+  .responsiveMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
   .homeButton {
     display: none;
-    width: 100%;
-  }
-
-  ul {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .topnav.responsive {
-    flex-direction: column;
-    margin: auto;
-    padding-bottom: 20px;
-    display: none;
-  }
-
-  .topnav.responsive ul li {
-    font-size: 20px;
-    line-height: 15px;
-    margin-left: -15px !important;
-  }
-
-  .topnav.responsive .homeButton {
-    justify-content: center;
   }
 }
